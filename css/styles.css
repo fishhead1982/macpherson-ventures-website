@@ -161,9 +161,42 @@ nav {
     transition: background 0.4s ease;
 }
 
+.hero-bg-image {
+    position: absolute;
+    inset: 0;
+    background: url('../website-hero-dragon-bridge.png') center/cover no-repeat;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    transition: background 0.4s ease;
+}
+
+[data-theme="light"] .hero-overlay,
+:root .hero-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(250,250,250,0.8),
+        rgba(250,250,250,0.6)
+    );
+}
+
+[data-theme="dark"] .hero-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(15,23,42,0.85),
+        rgba(15,23,42,0.6)
+    );
+}
+
 .hero-grid {
     position: absolute;
     inset: 0;
+    z-index: 2;
+    opacity: 0.12;
     background-image:
         linear-gradient(var(--grid-color) 1px, transparent 1px),
         linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
@@ -173,6 +206,11 @@ nav {
     animation: gridDrift 20s linear infinite;
 }
 
+[data-theme="light"] .hero-grid,
+:root .hero-grid {
+    opacity: 0.1;
+}
+
 @keyframes gridDrift {
     0% { transform: translate(0, 0); }
     100% { transform: translate(60px, 60px); }
@@ -180,7 +218,7 @@ nav {
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     padding: 2rem 1.5rem;
 }
 
