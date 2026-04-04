@@ -1,13 +1,10 @@
-// === Dark/Light Mode Toggle ===
+// === Theme Toggle ===
 (function () {
     const html = document.documentElement;
-
-    // Restore saved theme
     const savedTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', savedTheme);
 
     document.addEventListener('DOMContentLoaded', function () {
-        // Theme toggle (light/dark)
         const themeToggle = document.querySelector('.theme-toggle');
         if (themeToggle) {
             themeToggle.addEventListener('click', function () {
@@ -18,20 +15,15 @@
             });
         }
 
-        // Mobile nav toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        if (navToggle && navLinks) {
-            navToggle.addEventListener('click', function () {
-                navLinks.classList.toggle('open');
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
             });
-
-            // Close menu when a link is tapped
-            navLinks.querySelectorAll('a').forEach(function (link) {
-                link.addEventListener('click', function () {
-                    navLinks.classList.remove('open');
-                });
-            });
-        }
+        });
     });
 })();

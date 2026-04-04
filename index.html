@@ -3,75 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MacPherson Ventures Pty Ltd — We build intelligent mobile applications that simplify everyday tasks.">
-    <title>MacPherson Ventures — Home</title>
+    <meta name="description" content="MacPherson Ventures — AI solutions for Vietnamese businesses. Practical automation that fits how your business actually works. Based in Da Nang.">
+    <title>MacPherson Ventures</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">MacPherson Ventures</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <button class="theme-toggle" aria-label="Toggle dark mode">
-                        <span class="icon-sun">&#9788;</span>
-                        <span class="icon-moon">&#9790;</span>
-                    </button>
-                </li>
-            </ul>
+            <a href="#" class="logo">MacPherson Ventures</a>
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- Hero -->
+        <section id="hero" class="hero">
             <div class="container">
-                <h1>Intelligent apps,<br>built for real life.</h1>
-                <p class="hero-subtitle">MacPherson Ventures develops mobile applications that use AI to simplify everyday tasks — so you can spend less time on paperwork and more time on what matters.</p>
-                <div class="hero-actions">
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
-                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-                </div>
+                <h1>AI Solutions for Vietnamese Businesses</h1>
+                <p class="hero-subtitle">Practical automation that fits how your business actually works. Based in Da Nang.</p>
+                <a href="mailto:andrew@macphersonventures.com" class="btn btn-primary">Let's Talk</a>
             </div>
         </section>
 
-        <section class="features">
+        <!-- What We Do -->
+        <section id="services" class="services">
             <div class="container">
                 <h2>What We Do</h2>
                 <div class="card-grid">
                     <div class="card">
-                        <div class="card-icon">&#9881;</div>
-                        <h3>Mobile Development</h3>
-                        <p>We design and build cross-platform mobile applications using modern frameworks, delivering native performance on both iOS and Android.</p>
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3>Voice & Chat AI Agents</h3>
+                        <p>Customer-facing AI that speaks Vietnamese and English; handles enquiries, qualifies leads, and routes to your team via WhatsApp, Zalo, or phone.</p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">&#10038;</div>
-                        <h3>AI Integration</h3>
-                        <p>Our apps harness artificial intelligence to automate tedious processes — from document analysis to intelligent form completion.</p>
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+                        </div>
+                        <h3>Workflow Automation</h3>
+                        <p>Replace repetitive manual processes with smart systems. Listing generation, document handling, data entry, reporting.</p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">&#9878;</div>
-                        <h3>Privacy First</h3>
-                        <p>We believe your data is yours. Our applications are built with strong encryption and minimal data collection by design.</p>
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Lead Tracking & CRM</h3>
+                        <p>Simple dashboards so you can see what's happening with your leads and customers without drowning in spreadsheets.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <h3>AI Strategy & Integration</h3>
+                        <p>Not sure where to start? We'll audit your operations and identify the highest-value places to introduce AI.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="product-highlight">
+        <!-- Who We Work With -->
+        <section id="clients" class="clients">
             <div class="container">
-                <div class="highlight-content">
-                    <h2>Our Flagship Product</h2>
-                    <p><strong>SortedPDF</strong> is an AI-powered mobile app that reads your PDF forms and fills them in for you. Upload a document, let the AI analyse it, review the suggestions, and export — all in seconds.</p>
-                    <p>Available soon on the App Store and Google Play.</p>
+                <h2>Who We Work With</h2>
+                <p>We work with businesses across Vietnam's central region; real estate agencies, hotels and resorts, professional services firms, and education providers. If your team is spending hours on tasks that feel like they should be automatic, we should talk.</p>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>MacPherson Ventures is founded by Andrew MacPherson, an Australian technology professional based in Da Nang. With a background in enterprise systems and business analysis, Andrew bridges the gap between what AI can do and what your business actually needs. No jargon, no overselling; just practical tools that work.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Da Nang, Vietnam</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -80,16 +109,12 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <p class="footer-logo">MacPherson Ventures Pty Ltd</p>
-                    <p class="footer-tagline">Trading as SortedPDF</p>
-                </div>
+                <p class="footer-logo">MacPherson Ventures Pty Ltd</p>
                 <div class="footer-links">
                     <a href="privacy.html">Privacy Policy</a>
-                    <a href="contact.html">Contact</a>
                 </div>
             </div>
-            <p class="footer-copy">&copy; 2025 MacPherson Ventures Pty Ltd. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 MacPherson Ventures Pty Ltd</p>
         </div>
     </footer>
 
