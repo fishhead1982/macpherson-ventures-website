@@ -12,7 +12,7 @@
       "/assets/email/*"
     ]
   },
-"kv_namespaces": [
+  "kv_namespaces": [
     {
       "binding": "OPTOUTS",
       "id": "f7f3bacf372549b79cad815becd59aba"
