@@ -1,7 +1,21 @@
 {
   "name": "macpherson-ventures",
+  "main": "src/worker.js",
   "compatibility_date": "2026-02-16",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/unsubscribe",
+      "/unsubscribe/",
+      "/api/*",
+      "/assets/email/*"
+    ]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "OPTOUTS",
+      "id": "f7f3bacf372549b79cad815becd59aba"
+    }
+  ]
 }

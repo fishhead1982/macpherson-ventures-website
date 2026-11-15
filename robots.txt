@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /unsubscribe
+Disallow: /api/
 
 Sitemap: https://macphersonventures.com/sitemap.xml
