@@ -12,13 +12,10 @@
       "/assets/email/*"
     ]
   },
-  // Create the KV namespaces (needs a logged-in wrangler session), then
-  // fill in "id" and "preview_id" below. wrangler dev works without them.
-  //   npx wrangler kv namespace create OPTOUTS
-  //   npx wrangler kv namespace create OPTOUTS --preview
-  "kv_namespaces": [
+"kv_namespaces": [
     {
-      "binding": "OPTOUTS"
+      "binding": "OPTOUTS",
+      "id": "f7f3bacf372549b79cad815becd59aba"
     }
   ]
 }
