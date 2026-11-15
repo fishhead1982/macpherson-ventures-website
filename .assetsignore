@@ -1,0 +1,6 @@
+# Repo files that shouldn't be published as website assets
+.git
+.github
+README.md
+status.md
+wrangler.jsonc

@@ -1,101 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MacPherson Ventures builds practical AI automation for businesses across Australia and Vietnam. AI agents for reviews, calls, messaging, and workflow automation.">
-    <title>MacPherson Ventures — AI Agents for Business</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>MacPherson Ventures | AI Automation for Businesses in Australia and Vietnam</title>
+    <meta name="description" content="MacPherson Ventures builds practical AI agents for small and medium businesses in Australia and Vietnam: review replies, call handling, WhatsApp and Zalo messaging, and workflow automation.">
+    <link rel="canonical" href="https://macphersonventures.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MacPherson Ventures">
+    <meta property="og:locale" content="en_AU">
+    <meta property="og:title" content="MacPherson Ventures | Bespoke AI for business">
+    <meta property="og:description" content="Practical AI agents for small and medium businesses in Australia and Vietnam.">
+    <meta property="og:url" content="https://macphersonventures.com/">
+    <meta property="og:image" content="https://macphersonventures.com/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MacPherson Ventures logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MacPherson Ventures | Bespoke AI for business">
+    <meta name="twitter:description" content="Practical AI agents for small and medium businesses in Australia and Vietnam.">
+    <meta name="twitter:image" content="https://macphersonventures.com/img/og-image.png">
+    <meta name="twitter:image:alt" content="MacPherson Ventures logo">
+    <script>
+        (function () {
+            var d = document.documentElement, t = null;
+            d.className += ' js';
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            d.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2B303B" media="(prefers-color-scheme: dark)">
+    <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MacPherson Ventures Pty Ltd",
+        "alternateName": "MacPherson Ventures",
+        "url": "https://macphersonventures.com/",
+        "logo": "https://macphersonventures.com/icon-512.png",
+        "email": "andrew@macphersonventures.com",
+        "taxID": "50 680 855 243",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Camira",
+            "addressRegion": "QLD",
+            "addressCountry": "AU"
+        },
+        "areaServed": ["AU", "VN"]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
-        <nav class="container">
-            <a href="#" class="logo">MacPherson Ventures</a>
+        <nav class="container" aria-label="Main">
+            <a href="/" class="logo" aria-label="MacPherson Ventures home">
+                <img class="logo-light" src="/img/brand/mv-logo.svg" alt="MacPherson Ventures" width="170" height="48">
+                <img class="logo-dark" src="/img/brand/mv-logo-reversed.svg" alt="MacPherson Ventures" width="170" height="48">
+            </a>
             <div class="nav-links">
-                <a href="#services">What We Build</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="/#services">What we build</a>
+                <a href="/#how-it-works">How it works</a>
+                <a href="/#about">About</a>
+                <a href="/#contact">Contact</a>
             </div>
             <div class="nav-right">
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <button class="theme-toggle" aria-label="Toggle dark mode">
-                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
                     </svg>
-                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
                     </svg>
                 </button>
             </div>
         </nav>
-        <div class="mobile-nav">
-            <a href="#services">What We Build</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="/#services">What we build</a>
+            <a href="/#how-it-works">How it works</a>
+            <a href="/#about">About</a>
+            <a href="/#contact">Contact</a>
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero -->
         <section id="hero" class="hero">
             <div class="hero-bg-image" aria-hidden="true"></div>
             <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="hero-grid"></div>
+            <div class="hero-grid" aria-hidden="true"></div>
             <div class="container hero-content">
-                <h1 class="fade-in">AI agents that do the boring work for your business</h1>
-                <p class="hero-subtitle fade-in">MacPherson Ventures builds practical AI automation for businesses across Australia and Vietnam. We figure out where the real pain is, then build agents that handle it.</p>
+                <p class="hero-kicker fade-in">Bespoke AI for business</p>
+                <h1 class="fade-in">AI agents that take the repetitive work off your plate</h1>
+                <p class="hero-subtitle fade-in">MacPherson Ventures designs and builds practical AI automation for small and medium businesses in Australia and Vietnam. We start with where your time actually goes, then build agents that handle that work inside the tools you already use.</p>
                 <a href="#contact" class="btn btn-primary fade-in">Let's talk</a>
             </div>
         </section>
 
         <div class="section-divider"></div>
 
-        <!-- What We Build -->
+        <!-- What we build -->
         <section id="services" class="services">
             <div class="container">
-                <h2 class="fade-in">What We Build</h2>
+                <h2 class="fade-in">What we build</h2>
+                <p class="section-intro fade-in">Each agent is set up for your business, your customers and your way of working. These are the jobs we're asked about most.</p>
                 <div class="card-grid">
                     <div class="card fade-in">
-                        <div class="card-icon">
+                        <div class="card-icon" aria-hidden="true">
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
                         </div>
-                        <h3>Google Review Automation</h3>
-                        <p class="card-desc">AI agents that monitor, draft, and manage responses to Google reviews across all your locations.</p>
-                        <p class="card-quote">Your reviews answered within minutes, not days. Consistent tone, personalised replies, zero staff time.</p>
+                        <h3>Google review replies</h3>
+                        <p class="card-desc">Agents that watch for new Google reviews across all your locations and draft replies in your voice, ready to approve or post automatically.</p>
+                        <p class="card-outcome">Reviews answered in minutes rather than days, with a consistent tone and very little staff time.</p>
                     </div>
                     <div class="card fade-in">
-                        <div class="card-icon">
+                        <div class="card-icon" aria-hidden="true">
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
-                        <h3>Voice AI Agents</h3>
-                        <p class="card-desc">Inbound call handling — AI agents that answer customer enquiries in English or Vietnamese, qualify leads, and escalate when needed.</p>
-                        <p class="card-quote">Never miss a call. Your AI agent picks up, qualifies the lead, and hands off to your team with full context.</p>
+                        <h3>Voice AI agents</h3>
+                        <p class="card-desc">Inbound call handling in English or Vietnamese. The agent answers common questions, qualifies the caller and passes the details to your team, escalating when it should.</p>
+                        <p class="card-outcome">Fewer missed calls, and every lead reaches your team with the context they need.</p>
                     </div>
                     <div class="card fade-in">
-                        <div class="card-icon">
+                        <div class="card-icon" aria-hidden="true">
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                         </div>
-                        <h3>Messaging Automation</h3>
-                        <p class="card-desc">WhatsApp and Zalo bots that handle enquiries, bookings, and follow-ups automatically.</p>
-                        <p class="card-quote">Meet your customers where they already are. Instant replies on WhatsApp and Zalo, 24/7.</p>
+                        <h3>Messaging automation</h3>
+                        <p class="card-desc">WhatsApp and Zalo assistants that handle enquiries, bookings and follow-ups, and hand over to a person when a conversation needs one.</p>
+                        <p class="card-outcome">Customers get an answer straight away, on the apps they already use, at any hour.</p>
                     </div>
                     <div class="card fade-in">
-                        <div class="card-icon">
+                        <div class="card-icon" aria-hidden="true">
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
                         </div>
-                        <h3>Workflow Automation</h3>
-                        <p class="card-desc">Custom AI agents that replace manual business processes — data entry, reporting, lead tracking, follow-ups.</p>
-                        <p class="card-quote">Free your team from the repetitive stuff so they can focus on the work that actually matters.</p>
+                        <h3>Workflow automation</h3>
+                        <p class="card-desc">Custom agents for the manual jobs that fill up the week: data entry, reporting, lead tracking and follow-ups.</p>
+                        <p class="card-outcome">Your team spends less time on admin and more on the work that needs a person.</p>
                     </div>
                 </div>
             </div>
@@ -103,30 +160,30 @@
 
         <div class="section-divider"></div>
 
-        <!-- How It Works -->
+        <!-- How it works -->
         <section id="how-it-works" class="how-it-works">
             <div class="container">
-                <h2 class="fade-in">How It Works</h2>
+                <h2 class="fade-in">How it works</h2>
                 <div class="steps">
                     <div class="step fade-in">
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h3>We talk</h3>
-                            <p>Tell us what's eating your time. We'll identify where AI agents can make the biggest difference.</p>
+                            <p>Tell us what's eating your time. We look at how the work gets done now and pick the jobs where an agent will make a real difference.</p>
                         </div>
                     </div>
                     <div class="step fade-in">
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>We build</h3>
-                            <p>We design and deploy your AI agents, integrated with the tools you already use.</p>
+                            <p>We design and set up your agents, connect them to the tools you already use, and test them with your team before they go live.</p>
                         </div>
                     </div>
                     <div class="step fade-in">
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <h3>They work</h3>
-                            <p>Your agents run autonomously. You get reports, oversight, and the ability to step in when you want.</p>
+                            <p>Your agents run day to day. You get reports and oversight, and you can step in or change how they behave whenever you like.</p>
                         </div>
                     </div>
                 </div>
@@ -140,9 +197,9 @@
             <div class="container">
                 <h2 class="fade-in">About</h2>
                 <div class="about-text fade-in">
-                    <p>MacPherson Ventures is founded by Andrew MacPherson, an Australian technology consultant with deep experience in enterprise systems and business analysis across Australian universities and financial services.</p>
-                    <p>Now based in Da Nang, Vietnam (relocating to Brisbane mid-2026), Andrew saw that businesses everywhere were ready for AI but needed someone who could bridge the gap between what the technology can do and what the business actually needs.</p>
-                    <p>MacPherson Ventures works with businesses across Vietnam and Australia to build AI agent solutions that are practical, affordable, and designed around real problems — not hype.</p>
+                    <p>MacPherson Ventures was founded by Andrew MacPherson, an Australian technology consultant with deep experience in enterprise systems and business analysis across Australian universities and financial services.</p>
+                    <p>Andrew saw that plenty of businesses were ready to use AI but needed someone who understood both what the technology can do and how the business actually runs. Having lived and worked in Da Nang, he now works from Brisbane with businesses in Australia and Vietnam.</p>
+                    <p>The aim is simple: AI agents that are practical, affordable and built around real problems rather than hype.</p>
                 </div>
             </div>
         </section>
@@ -152,33 +209,35 @@
         <!-- Contact -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="fade-in">Get in Touch</h2>
+                <h2 class="fade-in">Get in touch</h2>
                 <div class="contact-layout fade-in">
                     <div class="contact-info">
+                        <p class="contact-lead">Tell us a little about your business and the work you'd like to hand off. Andrew will reply personally.</p>
                         <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                             <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a>
                         </div>
                         <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <span>Based in Da Nang, Vietnam. Relocating to Brisbane mid-2026.</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Based in Camira, Brisbane. Working with businesses across Australia and Vietnam.</span>
                         </div>
-                        <p class="contact-note">Happy to meet in person or over video.</p>
+                        <p class="contact-note">Happy to meet in person around Brisbane or over video.</p>
                     </div>
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send message</button>
+                        <p class="form-privacy">Sending opens your own email app with your message ready to go; this website doesn't store anything you type. See our <a href="/privacy">Privacy Policy</a> for how we handle your details.</p>
                     </form>
                 </div>
             </div>
@@ -186,12 +245,22 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p class="footer-copy">&copy; 2026 MacPherson Ventures Pty Ltd</p>
-            <p class="footer-built">Built in Da Nang</p>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img class="logo-light" src="/img/brand/mv-logo.svg" alt="MacPherson Ventures" width="128" height="36" loading="lazy">
+                <img class="logo-dark" src="/img/brand/mv-logo-reversed.svg" alt="MacPherson Ventures" width="128" height="36" loading="lazy">
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 MacPherson Ventures Pty Ltd &middot; ABN 50 680 855 243</p>
+                <p>Camira QLD, Australia &middot; <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/#contact">Contact</a>
+            </div>
         </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
