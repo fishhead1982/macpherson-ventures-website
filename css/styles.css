@@ -703,6 +703,43 @@ footer {
 
 .policy-contact p { margin-bottom: 0.25rem; }
 
+
+/* === Unsubscribe page === */
+.unsubscribe-panel {
+    max-width: 640px;
+}
+
+.unsubscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.unsubscribe-form .btn { align-self: flex-start; }
+
+.form-error {
+    color: #8a1f1f;
+    background: #fdecec;
+    border: 1px solid #f0c0c0;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin: 0 0 1.25rem;
+}
+
+:root[data-theme="dark"] .form-error {
+    color: #ffc9c9;
+    background: rgba(180, 40, 40, 0.22);
+    border-color: rgba(240, 140, 140, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .form-error {
+        color: #ffc9c9;
+        background: rgba(180, 40, 40, 0.22);
+        border-color: rgba(240, 140, 140, 0.35);
+    }
+}
 /* === Responsive === */
 @media (max-width: 768px) {
     .hero { min-height: 80vh; }

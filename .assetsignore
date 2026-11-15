@@ -1,6 +1,15 @@
 # Repo files that shouldn't be published as website assets
 .git
 .github
+.gitignore
 README.md
 status.md
 wrangler.jsonc
+src
+scripts
+.wrangler
+.dev.vars
+.dev.vars.example
+node_modules
+package.json
+package-lock.json
