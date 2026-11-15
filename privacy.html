@@ -1,122 +1,200 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en-AU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for MacPherson Ventures Pty Ltd and SortedPDF.">
-    <title>MacPherson Ventures — Privacy Policy</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Privacy Policy | MacPherson Ventures</title>
+    <meta name="description" content="How MacPherson Ventures Pty Ltd collects, uses, stores and protects personal information under the Privacy Act 1988 and the Australian Privacy Principles, and how to opt out of our emails.">
+    <link rel="canonical" href="https://macphersonventures.com/privacy">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MacPherson Ventures">
+    <meta property="og:locale" content="en_AU">
+    <meta property="og:title" content="Privacy Policy | MacPherson Ventures">
+    <meta property="og:description" content="How MacPherson Ventures Pty Ltd handles personal information.">
+    <meta property="og:url" content="https://macphersonventures.com/privacy">
+    <meta property="og:image" content="https://macphersonventures.com/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MacPherson Ventures logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Privacy Policy | MacPherson Ventures">
+    <meta name="twitter:description" content="How MacPherson Ventures Pty Ltd handles personal information.">
+    <meta name="twitter:image" content="https://macphersonventures.com/img/og-image.png">
+    <script>
+        (function () {
+            var d = document.documentElement, t = null;
+            d.className += ' js';
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'light' && t !== 'dark') {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            d.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2B303B" media="(prefers-color-scheme: dark)">
+    <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
-        <nav class="container">
-            <a href="index.html" class="logo">MacPherson Ventures</a>
+        <nav class="container" aria-label="Main">
+            <a href="/" class="logo" aria-label="MacPherson Ventures home">
+                <img class="logo-light" src="/img/brand/mv-logo.svg" alt="MacPherson Ventures" width="170" height="48">
+                <img class="logo-dark" src="/img/brand/mv-logo-reversed.svg" alt="MacPherson Ventures" width="170" height="48">
+            </a>
+            <div class="nav-links">
+                <a href="/#services">What we build</a>
+                <a href="/#how-it-works">How it works</a>
+                <a href="/#about">About</a>
+                <a href="/#contact">Contact</a>
+            </div>
             <div class="nav-right">
-                <button class="theme-toggle" aria-label="Toggle dark mode">
-                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
                     </svg>
-                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
                     </svg>
                 </button>
             </div>
         </nav>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="/#services">What we build</a>
+            <a href="/#how-it-works">How it works</a>
+            <a href="/#about">About</a>
+            <a href="/#contact">Contact</a>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="page-header">
             <div class="container">
                 <h1>Privacy Policy</h1>
-                <p>How we collect, use, and protect your information.</p>
+                <p>How MacPherson Ventures collects, uses and looks after personal information.</p>
             </div>
         </section>
 
-        <section class="page-content privacy-content">
+        <section class="page-content">
             <div class="container">
-                <p><strong>Effective date:</strong> 1 January 2025</p>
-                <p>MacPherson Ventures Pty Ltd ("we", "us", "our") operates the SortedPDF mobile application and related services. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application.</p>
+            <div class="prose">
+                <p class="policy-meta">Effective date: 16 November 2026</p>
 
-                <h3>1. Information We Collect</h3>
-                <p>We may collect the following types of information:</p>
+                <p>This policy applies to MacPherson Ventures Pty Ltd (ABN 50 680 855 243), referred to here as "we", "us" or "our". We are an AI consulting business based in Camira, Queensland, working with small and medium businesses in Australia and Vietnam.</p>
+                <p>We handle personal information in line with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). If you have a question that isn't answered here, email <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a>.</p>
+
+                <h2>1. What we collect</h2>
+                <p>We only collect personal information we need to run the business. Depending on how you deal with us, this can include:</p>
                 <ul>
-                    <li><strong>Account information:</strong> Email address and display name when you create an account.</li>
-                    <li><strong>Usage data:</strong> Anonymous analytics about how you interact with the app, including feature usage and session duration.</li>
-                    <li><strong>Device information:</strong> Device type, operating system version, and a unique device identifier for authentication purposes.</li>
-                    <li><strong>Documents:</strong> PDF files you upload for processing. These are handled transiently and are not stored on our servers after processing is complete.</li>
+                    <li>your name, job title and the business you work for;</li>
+                    <li>business contact details, such as your work email address, phone number and business address;</li>
+                    <li>what you tell us in emails, messages, calls and meetings;</li>
+                    <li>if you become a client, billing details and information about your business and project. Some projects involve working in systems that hold personal information about your staff or customers; we handle that only to deliver the work you've engaged us for, and as agreed with you.</li>
+                </ul>
+                <p>We don't ask for sensitive information, such as health information or racial or ethnic origin. If you send us something like that, we'll only keep it if it's needed and you've agreed.</p>
+                <p>You can contact us without giving your name, but we'll usually need an email address or phone number to reply.</p>
+
+                <h2>2. How we collect it</h2>
+                <p><strong>From you.</strong> Most information comes straight from you: when you email or call us, meet with us, or use the contact form on this website.</p>
+                <p><strong>The contact form.</strong> The form asks for your name, email address and a message. It doesn't send anything to a server. When you press "Send message", it opens your own email app with a draft addressed to andrew@macphersonventures.com, and nothing reaches us unless you send that email. This website doesn't store what you type.</p>
+                <p><strong>From public sources.</strong> To find businesses that may benefit from our services, we collect business contact details that are publicly available, such as names, roles and work email addresses published on business websites, in business directories, on professional networking profiles or in job advertisements. We only collect details published in a business context, and we use them only to contact people about matters relating to their role or business. See section 5 for how this works and how to opt out.</p>
+                <p><strong>This website.</strong> We don't use analytics, advertising or tracking tools, and we don't set cookies. Our fonts are hosted on this site, so your browser doesn't contact any third-party trackers when you visit. The site is hosted on Cloudflare, which processes technical information such as IP addresses to deliver the site and protect it from attacks; we don't use that information to identify visitors.</p>
+
+                <h2>3. Why we use it</h2>
+                <p>We use personal information to:</p>
+                <ul>
+                    <li>reply to your enquiries and prepare proposals and quotes;</li>
+                    <li>deliver, support and improve the work we do for clients;</li>
+                    <li>send invoices and manage our accounts;</li>
+                    <li>contact businesses about services that may be relevant to them (see section 5);</li>
+                    <li>meet our legal, tax and record-keeping obligations.</li>
+                </ul>
+                <p>We don't use your information for other purposes unless you agree, you'd reasonably expect it, or the law requires or allows it.</p>
+
+                <h2>4. Who we share it with</h2>
+                <p>We don't sell, rent or trade personal information. We only share it when we need to, with:</p>
+                <ul>
+                    <li>service providers that help us run the business, such as Microsoft 365 (email and documents), Xero (accounting and invoicing), Cloudflare (website hosting) and the AI tools described in section 6;</li>
+                    <li>professional advisers, such as our accountant or lawyer;</li>
+                    <li>government agencies or others, when the law requires or allows it.</li>
                 </ul>
 
-                <h3>2. How We Use Your Information</h3>
-                <p>We use the information we collect to:</p>
+                <h2>5. Direct marketing and business outreach</h2>
+                <p>We sometimes email businesses we think we could help, using the publicly available business contact details described in section 2. We follow the <em>Spam Act 2003</em> (Cth) and APP 7 when we do this:</p>
                 <ul>
-                    <li>Provide, operate, and maintain our application and services.</li>
-                    <li>Process your documents using AI-powered form analysis.</li>
-                    <li>Manage your account and subscription.</li>
-                    <li>Improve and develop new features based on aggregated, anonymised usage patterns.</li>
-                    <li>Communicate with you about your account, updates, or support requests.</li>
+                    <li>we only email addresses that a business or person has conspicuously published, and only about matters relating to that person's role or business. We don't email an address if it's published with a statement that unsolicited messages aren't wanted;</li>
+                    <li>every message clearly identifies MacPherson Ventures Pty Ltd and how to contact us;</li>
+                    <li>every message includes a working way to unsubscribe, and we act on unsubscribe requests within 5 business days;</li>
+                    <li>we don't buy or rent email lists.</li>
+                </ul>
+                <p><strong>How to opt out.</strong> Reply to any of our emails with "unsubscribe", use the unsubscribe link, or email <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a>. Opting out is free. We'll keep your email address on a do-not-contact list so we don't contact you again. You can also ask us where we got your details, and we'll tell you unless that's impracticable or unreasonable.</p>
+
+                <h2>6. Overseas disclosure</h2>
+                <p>We don't disclose personal information to overseas recipients. Our work with clients in Vietnam doesn't involve sending your personal information to anyone there.</p>
+                <p>Some of the cloud services we use, including Microsoft and Xero, may store or process data on servers outside Australia. Where this happens, the information stays under our control and is handled under those providers' own privacy and security commitments.</p>
+                <p>We also use AI tools and services, such as large language model providers, whose servers may be located outside Australia. Information we process through these tools may therefore be handled overseas. We take reasonable steps to protect it: we choose reputable providers, use business or enterprise terms that don't allow our data to be used to train their models where those terms are available, and keep the personal information we put into these tools to the minimum the task needs.</p>
+
+                <h2>7. Storage and security</h2>
+                <p>We store personal information electronically with the cloud services listed above. We take reasonable steps to protect it from misuse, interference, loss and unauthorised access, including access controls and multi-factor authentication on our business accounts.</p>
+                <p>When we no longer need personal information, we delete it or de-identify it, unless the law requires us to keep it. For example, tax records generally need to be kept for five years.</p>
+                <p>If a data breach is likely to cause serious harm to anyone, we'll notify the people affected and the Office of the Australian Information Commissioner (OAIC) as required under the Notifiable Data Breaches scheme.</p>
+
+                <h2>8. Accessing and correcting your information</h2>
+                <p>You can ask for a copy of the personal information we hold about you, or ask us to correct it, by emailing <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a>. We may need to confirm your identity first. We'll respond within 30 days and won't charge you for the request. If we can't give you access or make a correction, we'll explain why in writing and tell you how to complain.</p>
+
+                <h2>9. Complaints</h2>
+                <p>If you think we've mishandled your personal information, please email us first with the details. We'll acknowledge your complaint, look into it and reply in writing within 30 days.</p>
+                <p>If you're not satisfied with our response, you can complain to the Office of the Australian Information Commissioner:</p>
+                <ul>
+                    <li>website: <a href="https://www.oaic.gov.au" rel="noopener">www.oaic.gov.au</a></li>
+                    <li>phone: 1300 363 992</li>
                 </ul>
 
-                <h3>3. Data Storage and Security</h3>
-                <p>We take the security of your data seriously:</p>
-                <ul>
-                    <li>All data stored on your device is encrypted using AES-256 encryption.</li>
-                    <li>Communications between the app and our servers use HTTPS with TLS 1.2 or higher.</li>
-                    <li>API requests are authenticated using HMAC-SHA256 signatures.</li>
-                    <li>PDF documents are processed transiently and are not retained on our servers after processing.</li>
-                </ul>
+                <h2>10. Changes to this policy</h2>
+                <p>We may update this policy as our business or the law changes. The current version will always be on this page, with the date it took effect.</p>
 
-                <h3>4. Third-Party Services</h3>
-                <p>Our application may use the following third-party services:</p>
-                <ul>
-                    <li><strong>Anthropic (Claude API):</strong> For AI-powered document analysis. Documents are sent to Anthropic's API for processing and are subject to <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</li>
-                    <li><strong>Firebase:</strong> For anonymous analytics and crash reporting.</li>
-                    <li><strong>RevenueCat:</strong> For subscription management and payment processing.</li>
-                </ul>
-
-                <h3>5. Data Sharing</h3>
-                <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
-                <ul>
-                    <li>With service providers who assist in operating our application (as listed above).</li>
-                    <li>If required by law, regulation, or legal process.</li>
-                    <li>To protect the rights, property, or safety of MacPherson Ventures, our users, or others.</li>
-                </ul>
-
-                <h3>6. Your Rights</h3>
-                <p>Depending on your jurisdiction, you may have the right to:</p>
-                <ul>
-                    <li>Access, correct, or delete your personal information.</li>
-                    <li>Withdraw consent for data processing.</li>
-                    <li>Request a copy of your data in a portable format.</li>
-                    <li>Lodge a complaint with a supervisory authority.</li>
-                </ul>
-                <p>To exercise any of these rights, please contact us at the email address provided on our <a href="contact.html">Contact page</a>.</p>
-
-                <h3>7. Children's Privacy</h3>
-                <p>Our application is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take steps to delete it promptly.</p>
-
-                <h3>8. Changes to This Policy</h3>
-                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the updated policy within the application or on our website. Your continued use of the application after changes are posted constitutes acceptance of the updated policy.</p>
-
-                <h3>9. Contact Us</h3>
-                <p>If you have any questions about this Privacy Policy, please contact us via our <a href="contact.html">Contact page</a>.</p>
+                <h2>11. Contact us</h2>
+                <div class="policy-contact">
+                    <p>Andrew MacPherson, Privacy contact</p>
+                    <p>MacPherson Ventures Pty Ltd (ABN 50 680 855 243)</p>
+                    <p>Camira QLD 4300, Australia</p>
+                    <p><a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a></p>
+                </div>
+            </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-logo">MacPherson Ventures Pty Ltd</p>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                </div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img class="logo-light" src="/img/brand/mv-logo.svg" alt="MacPherson Ventures" width="128" height="36" loading="lazy">
+                <img class="logo-dark" src="/img/brand/mv-logo-reversed.svg" alt="MacPherson Ventures" width="128" height="36" loading="lazy">
             </div>
-            <p class="footer-copy">&copy; 2025 MacPherson Ventures Pty Ltd. All rights reserved.</p>
+            <div class="footer-meta">
+                <p>&copy; 2026 MacPherson Ventures Pty Ltd &middot; ABN 50 680 855 243</p>
+                <p>Camira QLD, Australia &middot; <a href="mailto:andrew@macphersonventures.com">andrew@macphersonventures.com</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/#contact">Contact</a>
+            </div>
         </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

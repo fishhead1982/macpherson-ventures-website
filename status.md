@@ -1,6 +1,6 @@
 ## Status
 
-Single-page corporate landing site for MacPherson Ventures Pty Ltd, currently positioned as an AI consultancy with a navy/amber palette and dark-mode hero. Actively iterated as recently as a few days ago.
+Single-page site for MacPherson Ventures Pty Ltd (AI consulting for SMBs in Australia and Vietnam) plus an Australian privacy policy at /privacy. Uses Ben Clark's brand set (Oct 2026): teal #009494, slate #3D4557, midnight #2B303B, with light and dark mode.
 
 ## Remaining
 
@@ -15,7 +15,8 @@ Single-page corporate landing site for MacPherson Ventures Pty Ltd, currently po
 - Hero background image with gradient overlay; default to dark mode
 - Redesign as AI consulting site with updated positioning and navy/amber palette
 - Workflow card copy updated to emphasise team empowerment over cost reduction
+- Nov 2026 refresh: new logo and favicons, brand palette, light/dark toggle, copy tidy-up, APP-based privacy policy, self-hosted Inter, canonical/OG tags, sitemap and robots; old about/contact pages redirect to the home page
 
 ## Notes
 
-Deployed to Cloudflare Pages via the wrangler config added in February. No open issues. README is a one-liner: "Corporate website for MacPherson Ventures Pty Ltd".
+Deployed as a Cloudflare Worker with static assets (wrangler.jsonc) via Workers Builds: pushes to main deploy to production; other branches upload preview versions. .assetsignore keeps repo files off the site. Brand source files live outside the repo (Ben Clark's Drive folder).
