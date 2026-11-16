@@ -19,6 +19,20 @@
     text-underline-offset: 3px;
 }
 
+.audit-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+.audit-secondary p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
 .audit-section { padding: 3rem 0; }
 .audit-alt { background: var(--bg-alt); }
 
