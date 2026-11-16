@@ -7,7 +7,7 @@
 // Leave a value as '' to keep the default mailto link in the HTML, which works without JavaScript.
 // If PAYMENT_URL is empty but BOOKING_URL is set, any pay element points to the booking page.
 const PAYMENT_URL = '';
-const BOOKING_URL = '';
+const BOOKING_URL = 'https://cal.com/macphersonventures/ai-time-audit';
 
 (function () {
     var targets = {
